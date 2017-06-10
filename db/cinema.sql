@@ -20,3 +20,6 @@ CREATE TABLE tickets (
   film_id INT4 REFERENCES film(id) ON DELETE CASCADE,
   review TEXT
   );
+
+binding.pry
+nil
