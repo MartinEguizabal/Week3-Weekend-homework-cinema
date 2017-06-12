@@ -20,7 +20,7 @@ class Film
   def customer()
     sql = "SELECT customers.* FROM customers 
     INNER JOIN tickets 
-    ON customers.id = tickets.customers_id 
+    ON customers.id = tickets.customer_id 
     WHERE tickets.customer_id = #{@id};"
     return Customer.map_items(sql)
   end
